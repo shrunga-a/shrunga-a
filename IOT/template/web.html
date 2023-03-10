@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Raspberry PI Remote Control</title>
+	</head>
+	<body>
+		<h1>Raspberry PI Remote Control</h1>
+		<h2>Light status: {{status}}, Last Modified: {{time}}</h2>
+		<form action = "http://172.16.201.210:4000/redledon">
+			<input type = "submit" value = "Red LED on">
+		</form>
+		<form action = "http://172.16.201.210:4000/redledoff">
+			<input type = "submit" value = "Red LED off">
+		</form>
+		
+		<h2>Buzzer status: {{status1}}, Last Modified: {{time1}}</h2>
+		<form action = "http://172.16.201.210:4000/buzzeron">
+			<input type = "submit" value = "Buzzer on">
+		</form>
+		<form action = "http://172.16.201.210:4000/buzzeroff">
+			<input type = "submit" value = "Buzzer off">
+		</form>
+		
+		<h2>Relay status: {{status2}}, Last Modified: {{time2}}</h2>
+		<form action = "http://172.16.201.210:4000/relayon">
+			<input type = "submit" value = "Relay on">
+		</form>
+		<form action = "http://172.16.201.210:4000/relayoff">
+			<input type = "submit" value = "Relay off">
+		</form>
+	</body>
+</html>
