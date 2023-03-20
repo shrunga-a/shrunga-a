@@ -1,13 +1,12 @@
 <html>
-	<body style="background-color:pink">
-	  <title>Rabery pi remote control</title>
-	  <h1>Rabery pi remote control</h1>
-	<h2>Light status : {{status}},last modified: {{time}}</h2>
-	<form action="http://192.168.14.16:4000/redledon">
-	<input type="submit" value="Red LED On">
-	</form>
-	<form action="http://192.168.14.16:4000/redledoff">
-	<input type="submit" value="Red LED Off">
-	</form>
+	<head>
+		<title>Raspberry PI Remote Control</title>
+	</head>
+	<body>
+		<h1>Raspberry PI Remote Control</h1>
+		<h2>Light status: {{status}}, Last Modified: {{time}}</h2>
+		<form action = "http://172.16.120.84:4000/">
+			<button>Status</button>
+		</form>
 	</body>
 </html>
